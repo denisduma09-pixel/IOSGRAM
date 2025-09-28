@@ -9,14 +9,11 @@
     <color name="kotuktoper_bubble_in">#2a2a3a</color>
     <color name="kotuktoper_accent">#AF52DE</color>
     
-    <!-- Application Colors -->
     <color name="actionBarDefault">@color/kotuktoper_primary</color>
-    <color name="actionBarDefaultWhite">@color/kotuktoper_primary</color>
-    <color name="actionBarActionModeDefault">@color/kotuktoper_primary</color>
-    <color name="avatar_background">@color/kotuktoper_secondary</color>
-    <color name="avatar_backgroundSaved">@color/kotuktoper_accent</color>
-    <color name="windowBackgroundWhite">@color/kotuktoper_background</color>
-    <color name="windowBackgroundGray">@color/kotuktoper_surface</color>
+<color name="theme_color">@color/kotuktoper_primary</color> 
+<color name="chat_inBubble">@color/kotuktoper_bubble_in</color>
+<color name="chat_outBubble">@color/kotuktoper_bubble_out</color>
+```
     
     <!-- Chat Colors -->
     <color name="chat_outBubbleBackground">@color/kotuktoper_bubble_out</color>
