@@ -3,6 +3,11 @@
 
     <!--THEMES-->
 
+    <!-- Добавь в styles.xml -->
+<style name="iOS18Text" parent="android:TextAppearance">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textSize">17sp</item>
+</style>
     <style name="Theme.TMessages.Start" parent="@android:style/Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/ActionBar.Transparent.TMessages.Start</item>
         <item name="android:colorBackground">@android:color/white</item>
