@@ -19,7 +19,7 @@ Also, AyuGram has **full ghost mode**.
 It allows you to hide your online status from other users, even if you send them
 a message.
 
-*And, well, it's not an Iranian Telegram fork with floating TV or something.*
+*And, well, it's not an Iranian Tele gram fork with floating TV or something.*
 
 ## Features list
 
