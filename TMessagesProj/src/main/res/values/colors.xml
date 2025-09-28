@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- iOS текст -->
+<color name="ios_primary_text">#000000</color>
+<color name="ios_secondary_text">#8E8E93</color>
     <!-- Закругления iOS -->
 <dimen name="ios_corner_radius">14dp</dimen>
 <dimen name="ios_small_corner">8dp</dimen>
