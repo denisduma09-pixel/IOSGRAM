@@ -254,17 +254,17 @@ public class DataSettingsActivity extends BaseFragment {
 
     @Override
     public View createView(Context context) {
-        actionBar.setBackButtonImage(R.drawable.ic_ab_back);
-        actionBar.setTitle(LocaleController.getString("DataSettings", R.string.DataSettings));
-        if (AndroidUtilities.isTablet()) {
-            actionBar.setOccupyStatusBar(false);
-        }
-        actionBar.setAllowOverlayTitle(true);
-        actionBar.setActionBarMenuOnItemClick(new ActionBar.ActionBarMenuOnItemClick() {
-            @Override
-            public void onItemClick(int id) {
-                if (id == -1) {
-                    finishFragment();
+    actionBar.setBackButtonImage(R.drawable.ic_ab_back);
+    actionBar.setTitle("KotuktoperGram"); // ← ПРОСТО ЗАМЕНИ СТРОКУ
+    if (AndroidUtilities.isTablet()) {
+        actionBar.setOccupyStatusBar(false);
+    }
+    actionBar.setAllowOverlayTitle(true);
+    actionBar.setActionBarMenuOnItemClick(new ActionBar.ActionBarMenuOnItemClick() {
+        @Override
+        public void onItemClick(int id) {
+            if (id == -1) {
+                finishFragment();
                 }
             }
         });
