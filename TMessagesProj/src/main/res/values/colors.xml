@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Закругления iOS -->
+<dimen name="ios_corner_radius">14dp</dimen>
+<dimen name="ios_small_corner">8dp</dimen>
     <!-- KotuktoperGram iOS 18 Palette -->
-    <color name="kotuktoper_primary">#007AFF</color>
+   <color name="kotuktoper_primary">#007AFF</color>
     <color name="kotuktoper_secondary">#5856D6</color>
     <color name="kotuktoper_background">#0a0a1a</color>
     <color name="kotuktoper_surface">#1a1a2a</color>
