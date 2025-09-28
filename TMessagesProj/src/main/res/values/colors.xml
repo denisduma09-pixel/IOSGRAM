@@ -1,24 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="divider">#dcdcdc</color>
-    <color name="widget_name">#212121</color>
-    <color name="widget_badge">#ffffff</color>
-    <color name="widget_time">#96999C</color>
-    <color name="widget_text">#8B8D8F</color>
-    <color name="widget_divider">#d9d9d9</color>
-    <color name="widget_action_text">#8B8D8F</color>
-    <color name="widget_edit_text">#999999</color>
-    <color name="ic_background">#9570FF</color>
-    <color name="ic_background_sus">#FFDE2A</color>
-
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
-
-    <!--static m colors-->
-    <color name="mRed200">#EF9A9A</color>
-    <color name="mRed500">#F44336</color>
-    <color name="mRed800">#C62828</color>
-    <color name="mGreen200">#A5D6A7</color>  
-    <color name="mGreen500">#4CAF50</color>  
-    <color name="mGreen800">#2E7D32</color>   
+    <!-- KotuktoperGram iOS 18 Palette -->
+    <color name="kotuktoper_primary">#007AFF</color>
+    <color name="kotuktoper_secondary">#5856D6</color>
+    <color name="kotuktoper_background">#0a0a1a</color>
+    <color name="kotuktoper_surface">#1a1a2a</color>
+    <color name="kotuktoper_bubble_out">#007AFF</color>
+    <color name="kotuktoper_bubble_in">#2a2a3a</color>
+    <color name="kotuktoper_accent">#AF52DE</color>
+    
+    <!-- Application Colors -->
+    <color name="actionBarDefault">@color/kotuktoper_primary</color>
+    <color name="actionBarDefaultWhite">@color/kotuktoper_primary</color>
+    <color name="actionBarActionModeDefault">@color/kotuktoper_primary</color>
+    <color name="avatar_background">@color/kotuktoper_secondary</color>
+    <color name="avatar_backgroundSaved">@color/kotuktoper_accent</color>
+    <color name="windowBackgroundWhite">@color/kotuktoper_background</color>
+    <color name="windowBackgroundGray">@color/kotuktoper_surface</color>
+    
+    <!-- Chat Colors -->
+    <color name="chat_outBubbleBackground">@color/kotuktoper_bubble_out</color>
+    <color name="chat_inBubbleBackground">@color/kotuktoper_bubble_in</color>
+    <color name="chat_messageTextOut">#FFFFFF</color>
+    <color name="chat_messageTextIn">#FFFFFF</color>
+    <color name="chat_timeText">#AAAAAA</color>
+    
+    <!-- Input Field -->
+    <color name="chat_messagePanelBackground">@color/kotuktoper_surface</color>
+    <color name="chat_messagePanelIcons">@color/kotuktoper_primary</color>
+    <color name="chat_fieldBackground">@color/kotuktoper_surface</color>
+    
+    <!-- Tab Colors -->
+    <color name="tabActive">@color/kotuktoper_primary</color>
+    <color name="tabInactive">#666666</color>
+    
+    <!-- Button Colors -->
+    <color name="featuredStickers_addButton">@color/kotuktoper_primary</color>
+    <color name="chat_attachActiveTab">@color/kotuktoper_primary</color>
+    
+    <!-- Status Colors -->
+    <color name="online">@color/kotuktoper_primary</color>
+    <color name="offline">#666666</color>
+    
+    <!-- New Feature Colors -->
+    <color name="ai_chat_background">#1a1a2a</color>
+    <color name="quick_reply_color">@color/kotuktoper_primary</color>
+    <color name="dynamic_island_bg">@color/kotuktoper_primary</color>
+    <color name="kotuktoper_gradient_start">#007AFF</color>
+    <color name="kotuktoper_gradient_end">#5856D6</color>
 </resources>
