@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+"1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:installLocation="auto">
@@ -901,5 +901,15 @@
             android:resource="@xml/actions" />
 
     </application>
+
+</manifest>
+    </application>
+
+    <!-- Fix for manifest merger -->
+    <receiver
+        android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+        android:enabled="true"
+        android:exported="false" 
+        tools:replace="android:exported" />
 
 </manifest>
