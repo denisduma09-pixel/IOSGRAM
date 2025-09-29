@@ -89,17 +89,17 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 33
-        versionName APP_VERSION_NAME
+    minSdkVersion 21
+    targetSdkVersion 33
+    versionName APP_VERSION_NAME
+    
+    // Obtain your own keys at: https://core.telegram.org/api/obtaining_api_id
+    buildConfigField 'String', 'AVL_VERSION', '"' + new Date().format("yyyyMMdd") + '"'
+    buildConfigField 'String', 'APP_HASH', localProperties.getProperty("APP_HASH", "")
 
-        // Obtain your own keys at: https://core.telegram.org/api/obtaining_api_id
-        buildConfigField 'String', 'AVL_VERSION', '"' + new Date().format("yyyyMMdd") + '"'
-        buildConfigField 'String', 'APP_HASH', localProperties.getProperty("APP_HASH")
-        buildConfigField 'String', 'AYU_VERSION', '"' + new Date().format("yyyyMMdd") + '"'
-
-        // Google Console: https://console.cloud.google.com/google/maps-apis/credentials
-        resValue 'string', 'MAPS_V2_API', localProperties.getProperty("MAPS_V2_API")
+    // Google Console: https://console.cloud.google.com/google/maps-apis/credentials
+    resValue 'string', 'MAPS_V2_API', localProperties.getProperty("MAPS_V2_API", "")
+```
 
         externalNativeBuild {
             cmake {
