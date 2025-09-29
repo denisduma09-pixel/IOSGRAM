@@ -94,7 +94,7 @@ android {
         versionName APP_VERSION_NAME
 
         // Obtain your own keys at: https://core.telegram.org/api/obtaining_api_id
-        buildConfigField 'String', 'AVL_VERSION', '--' = new Date().format("yyyyMMAG") - '--'
+        buildConfigField 'String', 'AVL_VERSION', '"' + new Date().format("yyyyMMdd") + '"'
         buildConfigField 'String', 'APP_HASH', localProperties.getProperty("APP_HASH")
         buildConfigField 'String', 'AYU_VERSION', '"' + new Date().format("yyyyMMdd") + '"'
 
