@@ -5,7 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  workflow_dispatch:  # ← ЭТО ДОБАВИТ КНОПКУ РУЧНОГО ЗАПУСКА!
+  workflow_dispatch:
 
 jobs:
   build:
@@ -25,11 +25,11 @@ jobs:
     - name: 🤖 Setup Android SDK
       uses: android-actions/setup-android@v3
       
-    - name: 🔧 Make gradlew executable
-      run: chmod +x ./gradlew
+    - name: 🔧 Clean project
+      run: ./gradlew clean
       
     - name: 🏗️ Build Debug APK
-      run: ./gradlew assembleDebug --no-daemon
+      run: ./gradlew assembleDebug --no-configuration-cache
       
     - name: 📦 Upload APK
       uses: actions/upload-artifact@v4
