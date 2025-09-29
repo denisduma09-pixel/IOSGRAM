@@ -1,17 +1,28 @@
-plugins {
-    id 'com.android.application'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+    }
 }
 
-def keystorePropertiesFile = rootProject.file("keystore.properties")
-def keystoreProperties = new Properties()
-if (keystorePropertiesFile.exists()) {
-    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'com.android.application'
 }
 
 android {
     compileSdk 33
     buildToolsVersion '33.0.1'
-    ndkVersion "21.4.7075529"
     namespace 'org.telegram.messenger'
 
     defaultConfig {
@@ -20,30 +31,13 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-        
-        buildConfigField "String", "AVL_VERSION", "\"20240929\""
-        buildConfigField "String", "APP_HASH", "\"\""
-        resValue "string", "MAPS_V2_API", "\"\""
-    }
-
-    signingConfigs {
-        release {
-            if (keystorePropertiesFile.exists()) {
-                keyAlias keystoreProperties['keyAlias']
-                keyPassword keystoreProperties['keyPassword']
-                storeFile file(keystoreProperties['storeFile'])
-                storePassword keystoreProperties['storePassword']
-            }
-        }
     }
 
     buildTypes {
         debug {
-            signingConfig signingConfigs.release
             debuggable true
         }
         release {
-            signingConfig signingConfigs.release
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -53,15 +47,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-
-    lint {
-        checkReleaseBuilds false
-        disable 'MissingTranslation', 'ExtraTranslation'
-    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
 }
